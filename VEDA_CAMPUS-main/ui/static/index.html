@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <title>VEDA Campus Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="VEDA home">
+        <span class="brand-mark">V<span>.</span></span>
+        <span class="brand-copy"><strong>VEDA</strong><small>CAMPUS ASSISTANT</small></span>
+      </a>
+
+      <div class="sidebar-section">
+        <p class="section-label">YOUR CAMPUS, SIMPLIFIED</p>
+        <div class="feature-list">
+          <div class="feature-item"><span class="feature-icon purple">✦</span><span>Ask campus questions</span></div>
+          <div class="feature-item"><span class="feature-icon blue">▤</span><span>Explore your syllabus</span></div>
+          <div class="feature-item"><span class="feature-icon green">◷</span><span>Check class schedules</span></div>
+        </div>
+      </div>
+
+      <div class="sidebar-section subjects-section">
+        <div class="section-heading">
+          <p class="section-label">SUBJECTS</p>
+          <span class="count-pill" id="subject-count">…</span>
+        </div>
+        <div class="subject-list" id="subject-list"><span class="muted">Loading subjects…</span></div>
+      </div>
+
+      <div class="sidebar-section faculty-section">
+        <div class="section-heading">
+          <p class="section-label">FACULTY</p>
+          <span class="count-pill" id="faculty-count">…</span>
+        </div>
+        <div class="faculty-list" id="faculty-list"><span class="muted">Loading faculty…</span></div>
+      </div>
+
+      <div class="sidebar-note">
+        <span class="note-icon">i</span>
+        <p>Demo faculty records are labeled. Replace them with verified campus information.</p>
+      </div>
+      <div class="sidebar-footer"><span class="online-dot"></span> Running locally on your computer</div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark">V<span>.</span></span><strong>VEDA</strong></div>
+        <div class="topbar-status"><span class="online-dot"></span> CAMPUS HELP DESK <span class="status-divider">/</span> <span>READY TO HELP</span></div>
+        <button class="clear-button" id="clear-chat" type="button" title="Clear conversation">↻ <span>New chat</span></button>
+      </header>
+
+      <section class="conversation" aria-label="VEDA chat">
+        <div class="welcome-block" id="welcome-block">
+          <div class="welcome-orb"><span>✦</span></div>
+          <p class="eyebrow">YOUR INTELLIGENT CAMPUS COMPANION</p>
+          <h1>Hi there. <span>What can I help</span><br>you find today?</h1>
+          <p class="welcome-copy">Get quick answers about your subjects, faculty, syllabus and class timetable.</p>
+          <div class="suggestion-grid">
+            <button class="suggestion-card" type="button" data-prompt="3rd year ECE syllabus">
+              <span class="suggestion-icon blue">▤</span><span><strong>Explore a syllabus</strong><small>“3rd year ECE syllabus”</small></span><b>↗</b>
+            </button>
+            <button class="suggestion-card" type="button" data-prompt="Who teaches DSP?">
+              <span class="suggestion-icon violet">♙</span><span><strong>Find a faculty member</strong><small>“Who teaches DSP?”</small></span><b>↗</b>
+            </button>
+            <button class="suggestion-card" type="button" data-prompt="CSE timetable on Monday">
+              <span class="suggestion-icon green">◷</span><span><strong>Check your timetable</strong><small>“CSE timetable on Monday”</small></span><b>↗</b>
+            </button>
+            <button class="suggestion-card" type="button" data-prompt="Show me ECE faculty">
+              <span class="suggestion-icon amber">✧</span><span><strong>Browse faculty</strong><small>“Show me ECE faculty”</small><b>↗</b>
+            </button>
+          </div>
+        </div>
+        <div class="messages" id="messages" aria-live="polite"></div>
+        <div class="typing-indicator" id="typing-indicator" aria-hidden="true"><span></span><span></span><span></span><small>VEDA is thinking</small></div>
+      </section>
+
+      <footer class="composer-area">
+        <form class="composer" id="chat-form">
+          <label class="sr-only" for="message-input">Your message</label>
+          <textarea id="message-input" rows="1" maxlength="1000" placeholder="Ask VEDA anything about your campus…" required></textarea>
+          <button class="mic-button" id="mic-button" type="button" aria-label="Speak your message" title="Speak your message">🎙</button>
+          <button class="send-button" id="send-button" type="submit" aria-label="Send message">↑</button>
+        </form>
+        <div class="composer-meta">
+          <button class="voice-toggle" id="voice-toggle" type="button" aria-pressed="false">🔊 Voice replies: off</button>
+          <span class="voice-status" id="voice-status" role="status" aria-live="polite"></span>
+          <p class="composer-hint">Press <kbd>Enter</kbd> to send <span>·</span> <kbd>Shift + Enter</kbd> for a new line</p>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

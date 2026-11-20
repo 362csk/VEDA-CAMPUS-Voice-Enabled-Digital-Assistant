@@ -1,0 +1,95 @@
+[
+  {
+    "name": "Dr. Ramesh Babu",
+    "department": "ECE",
+    "subject": "Digital Signal Processing",
+    "email": "ramesh.ece@college.edu",
+    "room": "Block A - Room 204"
+  },
+  {
+    "name": "Ms. Vaishnavi Kumari",
+    "department": "CSE",
+    "subject": "Data Structures",
+    "email": "vaishnavi.cse@college.edu",
+    "room": "Block C - Room 103"
+  },
+  {
+    "name": "Mr. Pradeep Yadav",
+    "department": "ECE",
+    "subject": "Microprocessors",
+    "email": "pradeep.ece@college.edu",
+    "room": "Block A - Room 210"
+  },
+  {
+    "name": "Dr. Ananya Rao (Demo)",
+    "department": "ECE",
+    "subject": "Basic Electronics",
+    "email": "ananya.rao@example.com",
+    "room": "Demo allocation",
+    "demo": true
+  },
+  {
+    "name": "Prof. Kiran Iyer (Demo)",
+    "department": "ECE",
+    "subject": "Engineering Mathematics I",
+    "email": "kiran.iyer@example.com",
+    "room": "Demo allocation",
+    "demo": true
+  },
+  {
+    "name": "Ms. Meera Nair (Demo)",
+    "department": "ECE",
+    "subject": "Signals and Systems",
+    "email": "meera.nair@example.com",
+    "room": "Demo allocation",
+    "demo": true
+  },
+  {
+    "name": "Dr. Arjun Menon (Demo)",
+    "department": "ECE",
+    "subject": "Wireless Communication",
+    "email": "arjun.menon@example.com",
+    "room": "Demo allocation",
+    "demo": true
+  },
+  {
+    "name": "Prof. Neha Kulkarni (Demo)",
+    "department": "ECE",
+    "subject": "Electromagnetic Theory",
+    "email": "neha.kulkarni@example.com",
+    "room": "Demo allocation",
+    "demo": true
+  },
+  {
+    "name": "Mr. Aditya Sharma (Demo)",
+    "department": "ECE",
+    "subject": "Control Systems",
+    "email": "aditya.sharma@example.com",
+    "room": "Demo allocation",
+    "demo": true
+  },
+  {
+    "name": "Ms. Kavya Reddy (Demo)",
+    "department": "CSE",
+    "subject": "Python Programming",
+    "email": "kavya.reddy@example.com",
+    "room": "Demo allocation",
+    "demo": true
+  },
+  {
+    "name": "Dr. Rahul Verma (Demo)",
+    "department": "CSE",
+    "subject": "Computer Networks",
+    "email": "rahul.verma@example.com",
+    "room": "Demo allocation",
+    "demo": true
+  },
+  {
+    "name": "Prof. Isha Patel (Demo)",
+    "department": "CSE",
+    "subject": "Discrete Mathematics",
+    "email": "isha.patel@example.com",
+    "room": "Demo allocation",
+    "demo": true
+  }
+]
